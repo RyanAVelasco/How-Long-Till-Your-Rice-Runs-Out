@@ -9,14 +9,13 @@ noPeople = Label(mainWindow, text="Number of people", pady=10)
 portion = Label(mainWindow, text="Portion size", pady=10)
 
 # === Assign labels to specific areas on the window (grid)
-# label.push()  # places the label in the top centre regardless of window size
 emptySpace.grid(row=0, column=0)
 bagWeight.grid(row=1, column=0)
 noPeople.grid(row=2, column=0)
 portion.grid(row=3, column=0)
 emptySpace.grid(row=4, column=0)
 
-# === Have button do something
+
 def calculate():
     global days
     global weeks
@@ -25,8 +24,6 @@ def calculate():
     bag = 8000  # gram: standard weight of rice bag
 
     base_amt = int(input("How much rice: "))
-
-    # ppl = input("How many people: ")
 
     days = 0
     new_amt = 0
@@ -50,6 +47,7 @@ def calculate():
     labela.grid(row=6, column=0)
     labelb.grid(row=7, column=0)
     labelc.grid(row=8, column=0)
+
 
 # === Create button
 button = Button(mainWindow, text="click please", command=calculate)
