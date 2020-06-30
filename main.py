@@ -40,13 +40,13 @@ def calculate():
     weeks = days/52
     years = days/365
 
-    labela = Label(mainWindow, text=("Days:", days))
-    labelb = Label(mainWindow, text=("Weeks:", weeks))
-    labelc = Label(mainWindow, text=("Years:", years))
+    label_days = Label(mainWindow, text=("Days:", days))
+    label_weeks = Label(mainWindow, text=("Weeks:", weeks))
+    label_years = Label(mainWindow, text=("Years:", years))
 
-    labela.grid(row=6, column=0)
-    labelb.grid(row=7, column=0)
-    labelc.grid(row=8, column=0)
+    label_days.grid(row=6, column=0)
+    label_weeks.grid(row=7, column=0)
+    label_years.grid(row=8, column=0)
 
 
 # === Create button
