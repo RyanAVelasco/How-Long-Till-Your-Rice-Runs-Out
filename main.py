@@ -24,9 +24,9 @@ def calculate():
         new_amt += int(serving.get()) * int(people.get())
 
     # === Console Information to reference
-    print("Your rice will last:", days, "days")
-    print("Your rice will last:", days / 52, "weeks")
-    print("Your rice will last:", days / 365, "years")
+    # print("Your rice will last:", days, "days")
+    # print("Your rice will last:", days / 52, "weeks")
+    # print("Your rice will last:", days / 365, "years")
 
     days = days
     weeks = days/52
